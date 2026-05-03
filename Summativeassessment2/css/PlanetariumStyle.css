@@ -1,0 +1,687 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+/*Navigation Bar*/
+
+#navbar {
+  background: black;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0px 4px 32px rgb(0 0 0 / 0.5);
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1500px;
+  margin: auto;
+}
+
+#navbar ul li {
+  list-style: none;
+  color: white;
+  padding: 0px 60px;
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+}
+
+#navbar ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+  color: white;
+
+}
+
+/*Home Page(Index)*/
+
+.body-one {
+  background-color: black;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../ImagesAndVids/Solar_system.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  margin: 40px 0;
+  padding: 0 40px;
+  justify-content: flex-start;
+  gap: 30px;
+
+}
+
+.section {
+  width: 250px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  padding-right: 20px;
+  align-self: flex-start;
+  flex: 0 0 200px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li a {
+  text-decoration: none;
+  color: grey;
+  display: block;
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+.orbit-image {
+  flex: 0 0 250px;
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.orbit-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  mix-blend-mode: screen;
+  object-fit: contain;
+}
+
+#main-box {
+  flex: 1;
+  text-align: left;
+  margin: 0;
+  padding-right: 20px;
+  min-width: 0;
+}
+
+.first-intro {
+  font-size: 48px;
+  text-align: left;
+  margin-left: 0;
+}
+
+h3 {
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+
+.first-para {
+  line-height: 1.8;
+  font-size: 18px;
+  max-width: 1000px;
+  width: 100%;
+  line-height: 1.8;
+}
+
+/* Planets Color Tag */
+
+.mercury {
+  color: #A5A5A5;
+  font-weight: bold;
+}
+
+.venus {
+  color: #E3BB76;
+  font-weight: bold;
+}
+
+.earth {
+  color: #2E8BC0;
+  font-weight: bold;
+}
+
+.mars {
+  color: #E27B58;
+  font-weight: bold;
+}
+
+.jupiter {
+  color: #D39C7E;
+  font-weight: bold;
+}
+
+.saturn {
+  color: #C5AB6E;
+  font-weight: bold;
+}
+
+.uranus {
+  color: #B2D4E1;
+  font-weight: bold;
+}
+
+.neptune {
+  color: #4B70DD;
+  font-weight: bold;
+}
+
+
+/* Gallery of our Solar System Page */
+.body-two {
+  background-color: black;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../ImagesAndVids/Orbits\ 2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.gallery-heading {
+  font-family: "Manrope", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+}
+
+
+.gallery-arrangement {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+
+.gallery-arrangement>div {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid purple;
+  transition: transform 0.3s ease;
+}
+
+
+.gallery-arrangement div a {
+  text-decoration: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Gallery of our Solar System Page (Planets, Moon, and Sun) */
+
+.sun-gallery {
+  background-image: url(../ImagesAndVids/Sun_gallery.jpg);
+}
+
+.mercury-gallery {
+  background-image: url(../ImagesAndVids/Mercury_gallery.jpg);
+}
+
+.venus-gallery {
+  background-image: url(../ImagesAndVids/Venus_gallery.jpg);
+}
+
+.earth-gallery {
+  background-image: url(../ImagesAndVids/Earth_gallery.jpg);
+}
+
+.mars-gallery {
+  background-image: url(../ImagesAndVids/Mars_gallery.jpg);
+}
+
+.jupiter-gallery {
+  background-image: url(../ImagesAndVids/Jupiter_gallery.jpg);
+}
+
+.saturn-gallery {
+  background-image: url(../ImagesAndVids/Saturn_gallery.jpg);
+}
+
+.uranus-gallery {
+  background-image: url(../ImagesAndVids/Uranus_gallery.jpg);
+}
+
+.neptune-gallery {
+  background-image: url(../ImagesAndVids/Neptune_gallery.jpg);
+}
+
+.pluto-gallery {
+  background-image: url(../ImagesAndVids/Pluto_gallery.jpg);
+}
+
+.moon-gallery {
+  background-image: url(../ImagesAndVids/Moon_gallery.jpg);
+}
+
+
+/*All Planets inside the Gallery*/
+.body-two-planets {
+  background-color: black;
+  text-align: center;
+}
+
+.gallery-arrangement-planets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+  width: 100%;
+}
+
+.gallery-arrangement-planets-items {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid purple;
+  border-radius: 15px;
+  overflow: hidden;
+  background: black;
+}
+
+
+.gallery-arrangement-planets-items video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-arrangement-planets-items img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*Milky Way Page*/
+
+.body-three {
+  background-color: black;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../ImagesAndVids/milkyway.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.milkyway-heading {
+  font-family: "Manrope", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+}
+
+.milkyway-para {
+  max-width: 100%;
+  margin: 100px 50px 50px 50px;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+}
+
+
+/*Interactive Flip Card*/
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.card-container {
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  border: 1px solid purple;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-front {
+  background-color: #111;
+}
+
+
+.card-front img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid purple;
+}
+
+
+.card-front h3 {
+  margin: 15px 0 5px 0;
+  color: purple;
+  text-align: center;
+}
+
+.tap-hint {
+  font-size: 15px;
+  color: grey;
+  text-align: center;
+}
+
+.card-back {
+  background-color: #1a1a1a;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.card-inner.is-flipped .card-back {
+  z-index: 2;
+  pointer-events: auto;
+}
+
+
+.card-inner.is-flipped .card-front {
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.close-btn {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+
+/*Our Neighbors Page*/
+
+.body-four {
+  background-color: black;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../ImagesAndVids/b565c1f372544d9b9aefd95ccc90d172-1024x539.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.neighbors-heading {
+  font-family: "Manrope", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+}
+
+.neighbors-para {
+  max-width: 100%;
+  margin: 100px 50px 50px 50px;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+}
+
+.galaxy-section {
+  margin-bottom: 50px;
+  padding: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.galaxy-image-block {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.galaxy-para {
+  max-width: 100%;
+  margin: 100px 50px 50px 50px;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+
+
+/*Galaxies*/
+.CMD {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.SDS {
+  color: #FF4500;
+  font-weight: bold;
+}
+
+.LMC {
+  color: #00BFFF;
+  font-weight: bold;
+}
+
+.SMC {
+  color: #32CD32;
+  font-weight: bold;
+
+}
+
+.UMD {
+  color: #BA55D3;
+  font-weight: bold;
+}
+
+.image-container-CMD {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-container-CMD img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+}
+
+#CMD-align {
+  text-align: center;
+}
+
+.image-container-SDS {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-container-SDS img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #FF4500;
+  border-radius: 8px;
+}
+
+#SDS-align {
+  text-align: center;
+}
+
+.image-container-LMC {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-container-LMC img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #00BFFF;
+  border-radius: 8px;
+}
+
+#LMC-align {
+  text-align: center;
+}
+
+.image-container-SMC {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-container-SMC img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #32CD32;
+  border-radius: 8px;
+}
+
+#SMC-align {
+  text-align: center;
+}
+
+.image-container-UMD {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-container-UMD img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #BA55D3;
+  border-radius: 8px;
+}
+
+#UMD-align {
+  text-align: center;
+}
+
+
+/*About Page*/
+
+.body-five {
+  background-color: black;
+  background-image: none;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-box {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  padding: 40px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1000px;
+  border: 1px solid #333;
+  border-top: 4px solid purple;
+  border-radius: 12px;
+  line-height: 1.8;
+}
+
+.about-head-box {
+  margin-bottom: 25px;
+}
+
+.about-head-box h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.about-head-box p {
+  margin-bottom: 20px;
+}
+
+.about-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.about-footer a {
+  color: #00BFFF;
+  text-decoration: none;
+}

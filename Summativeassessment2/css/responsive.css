@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    #navbar ul {
+        width: 100% !important;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+
+    #navbar ul li {
+        padding: 10px 15px;
+        font-size: 18px;
+        flex: 0 1 auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .layout-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .section {
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    #main-box,
+    .about-box,
+    .gallery-arrangement-planets-items {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #main-box {
+        padding-right: 0;
+    }
+
+    .first-intro {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .orbit-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        position: relative;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        padding: 10px 0;
+    }
+
+    #navbar ul li {
+        width: auto;
+        padding: 5px 10px;
+        font-size: 14px;
+        border-bottom: none;
+    }
+
+    #navbar ul li a {
+        padding: 8px;
+        width: auto;
+        display: inline-block;
+    }
+
+    .gallery-arrangement {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .milkyway-heading,
+    .gallery-heading,
+    .neighbors-heading {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .about-head-box h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navbar ul li {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .gallery-arrangement {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-para,
+    .neighbors-para,
+    .milkyway-para {
+        font-size: 18px;
+        margin: 40px 20px;
+    }
+}
